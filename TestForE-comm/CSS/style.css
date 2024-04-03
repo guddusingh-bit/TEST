@@ -1,0 +1,995 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: "Protest Revolution", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font-family: "Bellefair", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&family=Protest+Strike&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*  font-family: "Protest Strike", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Prociono&family=Reggae+One&display=swap');
+/*  font-family: "Prociono", serif; */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/*  font-family: "Anton", sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --main-color: #0ef;
+    --text-color: #fff;
+    --second-text-color: rgb(200, 199, 203);
+    --text-animate-color: red;
+}
+
+html {
+    font-size: 55%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+/* Header Section CSS */
+.header {
+    position: fixed;
+    width: 100%;
+    padding: 5px 4%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#menu {
+    position: relative;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--text-color);
+    display: none;
+    cursor: pointer;
+}
+
+.logo {
+    position: relative;
+    font-size: 28px;
+    color: var(--text-color);
+    font-family: Old English Text MT;
+}
+
+.logo:hover {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.navbar a{
+    font-size: 25px;
+    color: var(--text-color);
+    font-family: "Bellefair", serif;
+    margin-left:20px;
+    transition: .3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+header .btn-secondary {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Bellefair", serif;
+}
+
+/*----------- Home Section CSS --------------*/
+section {
+    width: 100%;
+    background: var(--second-bg-color);
+    padding: 0 25px;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .home-contact {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.home-contact h3 {
+    font-size: 12px;
+    color: var(--second-text-color);
+    font-weight: 500;
+}
+
+.home-contact h1 {
+    font-size: 40px;
+    color: var(--text-color);
+    font-family: "Prociono", serif;
+    font-weight: 500;
+}
+
+.home-contact p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.home .btn-secondary {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Bellefair", serif;
+}
+
+/* --------- About Section Design-----------*/
+.about {
+    background: var(--text-color);
+
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    background: var(--text-color);
+    gap: 50px;
+}
+
+.about-container .about-box {
+    background: var(--bg-color);
+    padding: 15px 13px 18px;
+    border: 2px solid var(--bg-color);
+    border-radius: 10px;
+    text-align: center;
+    transition: .5s ease;
+}
+
+.about-container .about-box:hover {
+    border-color: var(--main-color);
+    transition: scale(0.02);
+}
+
+.about-box i {
+    font-size: 35px;
+    color: var(--text-color);
+}
+
+.about-box a {
+    width: 70px;
+    height: 25px;
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.about-box h3 {
+    font-size: 20px;
+    color: var(--text-color);
+    margin-bottom: 3px;
+}
+
+.about-box p {
+    font-size: 12px;
+    color: var(--text-color);
+    padding: 13px 0;
+}
+
+.heading {
+    background: var(--text-color);
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 600;
+    font-family: "Bellefair", serif;
+}
+
+.about-containe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2px;
+    gap: 10px;
+}
+
+.about-containe .about-box {
+    width: 100%;
+}
+
+.about-box h1 {
+    font-size: 20px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    color: var(--second-bg-color);
+    margin-bottom: 20px;
+}
+
+.about-box h6 {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: "Anton", sans-serif;
+    color: var(--second-bg-color);
+}
+
+.card i {
+    font-size: 70px;
+    padding: 15px;
+}
+
+.card-body .card-title {
+    font-size: 15px;
+    padding: 10px 0;
+    font-family: "Prociono", serif;
+}
+
+.card-body .card-text {
+    font-size: 20px;
+    font-family: "Prociono", serif;
+}
+
+.box {
+    margin-left: 10px;
+
+}
+
+.box .first-box {
+    width: 50vh;
+    height: 40vh;
+    border-radius: 10px;
+    background: var(--second-bg-color);
+    position: relative;
+    box-shadow: 1px 1px 10px var(--second-bg-color);
+
+}
+
+.box .second-box {
+    position: relative;
+    width: 90%;
+    height: 35vh;
+    margin-left: -20px;
+    border-radius: 10px;
+    background: var(--bg-color);
+    box-shadow: 1px 1px 10px var(--bg-color);
+
+}
+.package h4{
+    font-size: 15px;
+}
+
+.package h2{
+    font-size: 25px;
+    font-family: "Prociono", serif;
+    font-weight: 900;
+}
+
+.package h5{
+    font-size: 20px;
+    font-family: "Prociono", serif;
+    font-weight: 200;
+}
+
+.package ul li {
+    font-size: 20px;
+}
+
+.package .btn-secondary {
+    font-size: 15px;
+    font-weight: 600;
+    font-family: "Bellefair", serif;
+}
+
+/* ----------------Portofolios Section Design -----------------*/
+.portoflio {
+    background: var(--second-bg-color);
+    margin-top: 5px;
+}
+
+.portoflio .heading-title {
+    color: var(--text-color);
+    text-align: center;
+    padding: 50px 0;
+    font-family: "Prociono", serif;
+}
+
+.portoflio .heading-title h5 {
+    color: var(--text-color);
+    font-size: 10px;
+}
+
+.portoflio .heading-title h2 {
+    color: var(--text-color);
+    font-size: 45px;
+}
+
+.portoflio .heading-title p {
+    color: var(--text-color);
+    font-size: 10px;
+}
+
+.portofolio-contanier {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2px;
+}
+
+.portofolio-contanier .portofolio-box {
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portofolio-box {
+    width: 390px;
+    height: 200px;
+    transition: .5s ease;
+}
+
+.portofolio-box i {
+    color: var(--text-color);
+    margin: auto;
+    font-size: 90px;
+}
+.portofolio-box:hover i {
+    transform: scale(1.1);
+}
+
+.portofolio-box .portofolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 35px;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portofolio-box:hover .portofolio-layer {
+    transform: translateY(0);
+}
+
+.portofolio-layer h4 {
+    font-size: 25px;
+}
+
+.portofolio-layer p {
+    font-size: 15px;
+    margin: 20px 0 10px;
+}
+
+.portofolio-layer i {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: var(--bg-color);
+    background: var(--text-color);
+    font-size: 25px;
+}
+
+/* ----------Services Section-------- */
+.service{
+    background: var(--text-color);
+}
+.service .heading-title {
+    color: var(--text-color);
+    text-align: center;
+    padding: 50px 0;
+    font-family: "Prociono", serif;
+}
+
+.service .heading-title h5 {
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+.service .heading-title h2 {
+    color: var(--text-color);
+    font-size: 35px;
+}
+
+.service .heading-title p {
+    color: var(--text-color);
+    font-size: 10px;
+}
+
+.service-containe {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+    padding: 0 15px;
+}
+
+.service-containe .box {
+    margin-bottom: 10px;
+
+}
+
+.service-containe .box .first-box {
+    width: 400px;
+    border-radius: 10px;
+    background: var(--second-bg-color);
+    position: relative;
+    box-shadow: 1px 1px 10px var(--second-bg-color);
+
+}
+
+.service-containe .box .second-box {
+    width: 370px;
+    height: 255px;
+    position: absolute;
+    bottom: -50px;
+    border-radius: 10px;
+    background: var(--bg-color);
+    box-shadow: 1px 1px 10px var(--bg-color);
+
+}
+
+.package h4 {
+    font-size: 15px
+}
+
+.package h2 {
+    font-size: 30px;
+    font-family: "Prociono", serif;
+    font-weight: 900;
+}
+
+.package h5 {
+    font-size: 13px;
+    font-family: "Prociono", serif;
+    font-weight: 200;
+}
+
+.package ul li {
+    font-size: 15px;
+}
+
+.package .btn-secondary {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Bellefair", serif;
+}
+
+.service .heading-title {
+    color: var(--bg-color);
+    text-align: center;
+    padding: 50px 0;
+    font-family: "Prociono", serif;
+}
+
+.service .heading-title h5 {
+    color: var(--second-bg-color);
+    font-size: 16px;
+}
+
+.service .heading-title h2 {
+    color: var(--bg-color);
+    font-size: 35px;
+}
+
+.service .heading-title p {
+    color: var(--second-text-color);
+    font-size: 13px;
+}
+.big-box{
+    width: 400px;
+    height: 60vh;
+    background: var(--second-bg-color);
+    position: relative;
+    margin-bottom: 80px;
+    border-radius: 8px;
+}
+.small-box{
+    color: var(--text-color);
+    margin:250px auto;
+    width: 150px;
+    height: 30vh;
+    background: var(--bg-color);
+    border-radius: 8px;
+}
+
+.small-box .box-title{
+width: 100%;
+padding-left: 20px;
+padding-top: 85px;
+}
+.small-box .box-title span{
+    font-size: 12px;
+    padding: 20px;
+}
+.small-box .box-title h6{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.small-box .icon i{
+    font-size: 18px;
+    padding-left: 20px;
+}
+/* ---------Project section-------- */
+
+.project{
+    background: var(--second-bg-color);
+    margin-top: 12px;
+    height: 100vh;
+}
+.project .heading-title {
+    color: var(--text-color);
+    text-align: center;
+    padding: 50px 0;
+    font-family: "Prociono", serif;
+}
+
+.project .heading-title h5 {
+    color: var(--text-color);
+    font-size: 13px;
+}
+
+.project .heading-title h2 {
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+.project .heading-title p {
+    color: var(--text-color);
+    font-size: 16px;
+}
+.contanier{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    width: 50%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+.slide img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.example{
+    background: var(--bg-color);
+    text-align: center;
+}
+.slide h3{
+    color: var(--text-color);
+    font-size: 15px;
+}
+.slide p{
+    font-size: 10px;
+    color: var(--main-color);
+    padding-left: 20px;
+    }
+.slide .fa.fa-quote-left{
+    font-size: 25px;
+    color: var(--main-color);
+}
+.navigation-manual{
+position: absolute;
+margin-top: -300px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.manual-btn{
+    border: 5px solid var(--main-color);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background: var(--bg-color);
+}
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+}
+.navigation-auto div{
+    border: 5px solid var(--main-color);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: var(--main-color);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: var(--main-color);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: var(--main-color);
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: var(--main-color);
+}
+/* ----------Pages---------- */
+.pages{
+    width: 100%;
+    background: var(--second-bg-color);
+    height: 100vh;
+    margin-top: 20px;
+    margin-bottom:15px;
+ }
+
+ .pages-contanier {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
+ }
+ .pages .pages-box{
+    width: 100%;
+    height:100vh;
+ }
+
+ .pages .pages-box .pages-layer{
+ width: 70%;
+ height: 60vh;
+ border-radius: 13px;
+ background: var(--second-text-color);
+ margin:20% auto;
+ position: relative;
+ }
+ .pages .pages-box .pages-layer a i{
+   margin-left: 130px;
+   position: absolute;
+   bottom: 25%;
+   font-size: 150px;
+   color: var(--second-bg-color);
+   
+ }
+ .pages .pages-title{
+    color: var(--text-color);
+    font-family: "Prociono", serif;
+ }
+ .pages .pages-title h5{
+  font-size: 10px;
+ }
+ .pages .pages-title h1{
+    font-size: 25px;
+ }
+ .pages .pages-title p{
+    font-size: 15px;
+ }
+ 
+/*----------Footer----------*/
+.footer {
+    background: var(--bg-color);
+}
+
+.section-p1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-p1 img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.section-p1 h4 {
+    font-family: "Bellefair", serif;
+    font-size: 25px;
+    color: var(--text-color);
+    padding-bottom: 10px;
+}
+
+.section-p1 p {
+    margin: 0 0 10px 0;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.section-p1 .icon {
+    margin: 10px;
+}
+
+.section-p1 .icon i {
+    color: var(--text-color);
+    font-size: 25px;
+    padding-right: 15px;
+    cursor: pointer;
+    font-weight: 800;
+    transition: all 1s ease;
+
+}
+
+.section-p1 .icon i:hover {
+    color: var(--main-color);
+}
+
+.col_install {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+
+}
+
+.install_item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.install_title h4 {
+    font-size: 30px;
+    margin: 0 0 10px 0;
+}
+
+.install_title p {
+    font-family: "Bellefair", serif;
+    font-size: 15px;
+    margin: 0 0 5px 0;
+}
+
+.install_item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.payment_get {
+    width: 200px;
+    height: 50px;
+}
+
+.copyright {
+    font-size: 10px;
+    text-align: center;
+    color: var(--text-color);
+    padding: 10px 0;
+}
+
+
+
+
+/* ---------------------Media Screen------------------------------ */
+/* Media Query For All Divice */
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+}
+@media (max-width:991px){
+    .header{
+       width: 100%; 
+    }
+    section{
+        padding: 40px;
+    }
+    .portofolio-box{
+        width: 78%;
+    }
+    .home{
+        padding: 0 4%;
+    }
+    .footer{
+        padding: 5px 4%;
+    }
+}
+@media (max-width:768px){
+    .header{
+        background: var(--bg-color);
+    }
+    .header .logo{
+        font-size: 35px;
+    }
+    #menu{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top:50px;
+        right: 200%;
+        z-index: 1;
+        transition: .25s ease;
+        transition-delay: .75s;
+    }
+    .navbar.active{
+        position: absolute;
+        background: var(--bg-color);
+        width: 100%;
+        left: 0;
+        transition-delay: 0s;
+    }
+    .navbar.active .active-nav{
+        left: 0;
+        transition-delay: .25s;
+    } 
+    .navbar a{
+        display: inline-block;
+        font-size: 20px;
+        margin: 10px 0;
+        transform: translateX(-320px);
+        transition: .25s ease;
+        transition-delay: 0s;
+    } 
+    .navbar.active a{
+        transform: translateX(0);
+        transition-delay: .25s;
+    }
+    
+    .portoflio .heading{
+        padding-top: 50px;
+    }
+    .portofolio-contanier{
+        align-items: center;
+        gap: 5px;
+    }
+    .portofolio-box img{
+        width: 350px;
+        height: 180px;
+    }
+    .portofolio-layer h4{
+        font-size: 15px;
+    }
+    .portofolio-layer p{
+        font-size: 12px;
+        margin: 8px 0 3px;
+    }
+    .portofolio-layer i{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: var(--bg-color);
+        background: var(--text-color);
+        font-size: 15px;
+    } 
+}
+@media (max-width:462px){
+    .home-contact h3,h1{
+        font-size: 22px;
+    }
+    .home-contact p{
+        font-size: 11px;
+    }
+    .home-img{
+        width: 50vw;
+    }
+    .home-img img{
+        width: 35vw;
+    }
+    .about-content h2{
+        padding-top: 50px;
+    }
+    .portoflio h2{
+        padding: 10px 0;
+    }
+    .portofolio-layer h4{
+        font-size: 13px;
+    }
+    .portofolio-layer p{
+        font-size: 11px;
+        margin: 10px 0 5px;
+    }
+    .portofolio-layer i{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: var(--bg-color);
+        background: var(--text-color);
+        font-size: 9px;
+    }
+    .pages .pages-box .pages-layer a i{
+        font-size: 50px;
+        color: var(--second-bg-color);
+        
+      }
+    .footer{
+        flex-direction: column-reverse;
+    }
+    .footer p{
+        padding: 5px;
+        text-align: center;
+    }
+}
+@media (max-width:371px){
+    .home-contact h3,
+    .home-contact h1
+    {
+        font-size: 20px;
+    }
+    .home-contact span
+    {
+        font-size: 15px;  
+    }
+    .home-contact p{
+        font-size: 10px;
+    }
+    .education .education-row{
+        gap:50px;
+    }
+    .portofolio-contanier{
+        align-items: center;
+        gap: 5px;
+    }
+    .portofolio-layer h4{
+        font-size: 10px;
+    }
+    .portofolio-layer p{
+        font-size: 8px;
+        margin: 10px 0 5px;
+    }
+    .portofolio-layer i{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        color: var(--bg-color);
+        background: var(--text-color);
+        font-size: 9px;
+    }
+}
